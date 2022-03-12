@@ -1,0 +1,11 @@
+{
+    "name": "diegosampaio/mvc-php",
+    "description": "Aplicação PHP simples, utilizando MVC",
+    "authors": [
+        {
+            "name": "Diego Sampaio",
+            "email": "diego.estaleiro@gmail.com"
+        }
+    ],
+    "require": {}
+}
