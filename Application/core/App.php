@@ -42,6 +42,7 @@ class App
    */
   private function getControllerURL(array $url)
   {
+    
     if ( !empty($url[0]) && isset($url[0]) ) {
       if ( file_exists('../Application/controllers/' . ucfirst($url[0] . '.php'))) {
         $this->controller = ucfirst($url[0]);
@@ -49,8 +50,9 @@ class App
         $this->pagina404 = true;
       }
     }
-
-    require_once '../Application/controllers/' . $this->controller . '.php';
+    $filePath = '../Application/controllers/' . $this->controller . '.php';
+    var_dump($url, $filePath);
+    require $filePath;
     $this->controller = new $this->controller();
   }
 
